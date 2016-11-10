@@ -1,0 +1,35 @@
+<resources>
+    <string name="app_name">Alumni</string>
+
+    <!-- 登陆界面 -->
+    <string name="hint_login_account">手机号/邮箱</string>
+    <string name="hint_login_password">密码</string>
+    <string name="btn_login_submit">登录</string>
+    <string name="error_login_account_null">账户不能为空</string>
+    <string name="error_login_pwd_notuseful">密码位数在4-128位之间</string>
+    <string name="error_login_noresp">服务端没有响应</string>
+    <string name="tv_login_go2reg">没有账号？</string>
+    <string name="tv_login_go2refind">忘记密码？</string>
+    <string name="resp_login_ok">登录成功</string>
+
+    <!--注册页面-->
+    <string name="title_activity_reg">注册</string>
+    <string name="hint_reg_nickname">昵称</string>
+    <string name="hint_reg_account">手机号/邮箱</string>
+    <string name="hint_reg_password">密码</string>
+    <string name="hint_reg_confirm">确认密码</string>
+    <string name="btn_reg_submit">注册</string>
+    <string name="tv_reg_go2rule">点击注册按钮说明您同意《校友会用户协议》</string>
+    <string name="error_reg_nickname_null">昵称不能为空</string>
+    <string name="error_reg_account_null">昵称不能为空</string>
+    <string name="error_reg_password_notuseful">密码位数在4-128位之间</string>
+    <string name="resp_reg_ok">注册成功</string>
+
+    <string name="error_common_notjson">服务端返回的不是JSON</string>
+    <string name="title_activity_main">MainActivity</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+</resources>
