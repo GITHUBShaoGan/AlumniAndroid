@@ -12,10 +12,13 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.ImageView;
+import android.widget.TextView;
 
-import com.ashokvarma.bottomnavigation.BottomNavigationBar;
-import com.ashokvarma.bottomnavigation.BottomNavigationItem;
+import com.nostra13.universalimageloader.core.ImageLoader;
+import com.slut.alumni.App;
 import com.slut.alumni.R;
+import com.slut.alumni.utils.StringUtils;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
@@ -29,8 +32,12 @@ public class MainActivity extends AppCompatActivity
     DrawerLayout drawer;
     @BindView(R.id.nav_view)
     NavigationView navigationView;
-    @BindView(R.id.navigationtab)
-    BottomNavigationBar bottomNavigationBar;
+
+    private View navHeaderView;
+    private TextView name;
+    private TextView account;
+    private ImageView avatar;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -41,6 +48,7 @@ public class MainActivity extends AppCompatActivity
     }
 
     private void initView() {
+
         setSupportActionBar(toolbar);
 
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
@@ -49,12 +57,15 @@ public class MainActivity extends AppCompatActivity
         toggle.syncState();
 
         navigationView.setNavigationItemSelectedListener(this);
+        navHeaderView = navigationView.getHeaderView(0);
+        avatar = (ImageView) navHeaderView.findViewById(R.id.avatar);
+        name = (TextView) navHeaderView.findViewById(R.id.name);
+        account = (TextView) navHeaderView.findViewById(R.id.account);
 
-        bottomNavigationBar
-                .addItem(new BottomNavigationItem(R.mipmap.ic_launcher, "广场"))
-                .addItem(new BottomNavigationItem(R.mipmap.ic_launcher, "校内"))
-                .addItem(new BottomNavigationItem(R.mipmap.ic_launcher, "班内"))
-                .initialise();
+        ImageLoader.getInstance().displayImage(App.getLoginBean().getData().getUser_info().getAvatar_url().toString(), avatar);
+        name.setText(App.getLoginBean().getData().getUser_info().getNickname());
+        String ac = StringUtils.isNullOrEmpty(App.getLoginBean().getData().getUser_info().getEmail()) ? App.getLoginBean().getData().getUser_info().getPhone_no() : App.getLoginBean().getData().getUser_info().getEmail();
+        account.setText(ac);
     }
 
     @Override
@@ -94,20 +105,6 @@ public class MainActivity extends AppCompatActivity
     public boolean onNavigationItemSelected(MenuItem item) {
         // Handle navigation view item clicks here.
         int id = item.getItemId();
-
-        if (id == R.id.nav_camera) {
-            // Handle the camera action
-        } else if (id == R.id.nav_gallery) {
-
-        } else if (id == R.id.nav_slideshow) {
-
-        } else if (id == R.id.nav_manage) {
-
-        } else if (id == R.id.nav_share) {
-
-        } else if (id == R.id.nav_send) {
-
-        }
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         drawer.closeDrawer(GravityCompat.START);

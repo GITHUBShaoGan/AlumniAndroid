@@ -10,14 +10,14 @@ public class LoginBean {
     /**
      * errno : 0
      * msg : 登录成功
-     * data : {"oauth_info":{"access_token":"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1aWQiOiIxIiwiaWF0IjoxNDc4Njc5MTI1LCJleHAiOjE0NzkyODM5MjV9.lUE6gMYTyKLHz6-E9ywspn8LW9_C7DGf2ilO3LKRPgA"},"user_info":{"uid":"1","phone_no":"13501369735","email":"1061104250@qq.com","password":"e10adc3949ba59abbe56e057f20f883e","nickname":"小贱嘎嘎","school_id":"1","faculty_id":"1","major_id":"1","reg_time":"1478678837","last_login":"1478678837","login_num":"39","login_ip":"192.168.37.1","access_token":"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1aWQiOiIxIiwiaWF0IjoxNDc4Njc4ODM3LCJleHAiOjE0NzkyODM2Mzd9.G3u2t0T7Q-vANGuBIndU8nBow_nPgVplZZqbmCBfE7o"}}
+     * data : {"oauth_info":{"access_token":"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1aWQiOiIzIiwiaWF0IjoxNDc4ODQ3MTc2LCJleHAiOjE0Nzk0NTE5NzZ9._qA1Aes5Ru3QoAFnI-lMmUxkSFVnngtKiSzTCY58O8I"},"user_info":{"uid":"3","phone_no":null,"email":"shijianan33@gmail.com","password":"e10adc3949ba59abbe56e057f20f883e","nickname":"史建安","avatar_url":null,"school_id":null,"faculty_id":null,"major_id":null,"reg_time":"1478685389","last_login":"1478685389","login_num":"1","login_ip":"192.168.37.1","access_token":null}}
      */
 
     private int errno;
     private String msg;
     /**
-     * oauth_info : {"access_token":"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1aWQiOiIxIiwiaWF0IjoxNDc4Njc5MTI1LCJleHAiOjE0NzkyODM5MjV9.lUE6gMYTyKLHz6-E9ywspn8LW9_C7DGf2ilO3LKRPgA"}
-     * user_info : {"uid":"1","phone_no":"13501369735","email":"1061104250@qq.com","password":"e10adc3949ba59abbe56e057f20f883e","nickname":"小贱嘎嘎","school_id":"1","faculty_id":"1","major_id":"1","reg_time":"1478678837","last_login":"1478678837","login_num":"39","login_ip":"192.168.37.1","access_token":"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1aWQiOiIxIiwiaWF0IjoxNDc4Njc4ODM3LCJleHAiOjE0NzkyODM2Mzd9.G3u2t0T7Q-vANGuBIndU8nBow_nPgVplZZqbmCBfE7o"}
+     * oauth_info : {"access_token":"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1aWQiOiIzIiwiaWF0IjoxNDc4ODQ3MTc2LCJleHAiOjE0Nzk0NTE5NzZ9._qA1Aes5Ru3QoAFnI-lMmUxkSFVnngtKiSzTCY58O8I"}
+     * user_info : {"uid":"3","phone_no":null,"email":"shijianan33@gmail.com","password":"e10adc3949ba59abbe56e057f20f883e","nickname":"史建安","avatar_url":null,"school_id":null,"faculty_id":null,"major_id":null,"reg_time":"1478685389","last_login":"1478685389","login_num":"1","login_ip":"192.168.37.1","access_token":null}
      */
 
     private DataBean data;
@@ -48,24 +48,25 @@ public class LoginBean {
 
     public static class DataBean {
         /**
-         * access_token : eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1aWQiOiIxIiwiaWF0IjoxNDc4Njc5MTI1LCJleHAiOjE0NzkyODM5MjV9.lUE6gMYTyKLHz6-E9ywspn8LW9_C7DGf2ilO3LKRPgA
+         * access_token : eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1aWQiOiIzIiwiaWF0IjoxNDc4ODQ3MTc2LCJleHAiOjE0Nzk0NTE5NzZ9._qA1Aes5Ru3QoAFnI-lMmUxkSFVnngtKiSzTCY58O8I
          */
 
         private OauthInfoBean oauth_info;
         /**
-         * uid : 1
-         * phone_no : 13501369735
-         * email : 1061104250@qq.com
+         * uid : 3
+         * phone_no : null
+         * email : shijianan33@gmail.com
          * password : e10adc3949ba59abbe56e057f20f883e
-         * nickname : 小贱嘎嘎
-         * school_id : 1
-         * faculty_id : 1
-         * major_id : 1
-         * reg_time : 1478678837
-         * last_login : 1478678837
-         * login_num : 39
+         * nickname : 史建安
+         * avatar_url : null
+         * school_id : null
+         * faculty_id : null
+         * major_id : null
+         * reg_time : 1478685389
+         * last_login : 1478685389
+         * login_num : 1
          * login_ip : 192.168.37.1
-         * access_token : eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1aWQiOiIxIiwiaWF0IjoxNDc4Njc4ODM3LCJleHAiOjE0NzkyODM2Mzd9.G3u2t0T7Q-vANGuBIndU8nBow_nPgVplZZqbmCBfE7o
+         * access_token : null
          */
 
         private UserInfoBean user_info;
@@ -104,9 +105,10 @@ public class LoginBean {
             private String email;
             private String password;
             private String nickname;
-            private String school_id;
-            private String faculty_id;
-            private String major_id;
+            private String avatar_url;
+            private int school_id;
+            private int faculty_id;
+            private int major_id;
             private String reg_time;
             private String last_login;
             private String login_num;
@@ -153,27 +155,35 @@ public class LoginBean {
                 this.nickname = nickname;
             }
 
-            public String getSchool_id() {
+            public String getAvatar_url() {
+                return avatar_url;
+            }
+
+            public void setAvatar_url(String avatar_url) {
+                this.avatar_url = avatar_url;
+            }
+
+            public int getSchool_id() {
                 return school_id;
             }
 
-            public void setSchool_id(String school_id) {
+            public void setSchool_id(int school_id) {
                 this.school_id = school_id;
             }
 
-            public String getFaculty_id() {
+            public int getFaculty_id() {
                 return faculty_id;
             }
 
-            public void setFaculty_id(String faculty_id) {
+            public void setFaculty_id(int faculty_id) {
                 this.faculty_id = faculty_id;
             }
 
-            public String getMajor_id() {
+            public int getMajor_id() {
                 return major_id;
             }
 
-            public void setMajor_id(String major_id) {
+            public void setMajor_id(int major_id) {
                 this.major_id = major_id;
             }
 
@@ -209,7 +219,7 @@ public class LoginBean {
                 this.login_ip = login_ip;
             }
 
-            public String getAccess_token() {
+            public Object getAccess_token() {
                 return access_token;
             }
 

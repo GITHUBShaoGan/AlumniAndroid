@@ -25,11 +25,20 @@
     <string name="error_reg_password_notuseful">密码位数在4-128位之间</string>
     <string name="resp_reg_ok">注册成功</string>
 
+    <!--主界面-->
+    <string name="title_activity_main">首页</string>
+    <string name="action_main_nav_cls">我的班级</string>
+    <string name="action_main_nav_school">我的学校</string>
+    <string name="action_main_nav_mine">我的资料</string>
+    <string name="action_main_nav_setting">设置</string>
+
     <string name="error_common_notjson">服务端返回的不是JSON</string>
-    <string name="title_activity_main">MainActivity</string>
 
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
 
     <string name="action_settings">Settings</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>
